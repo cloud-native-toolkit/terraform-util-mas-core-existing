@@ -1,0 +1,34 @@
+name: util-mas-core-existing
+alias: mas_core_existing
+type: terraform
+description: Module to represent an existing MAS Core install
+tags:
+  - tools
+  - devops
+versions:
+  - platforms: []
+    dependencies: []
+    variables:
+      - name: core_namespace
+        type: string
+        description: The namespace where the module will be deployed
+      - name: entitlement_secret_name
+        type: string
+        description: The name of the secret that contains the entitlement_key
+      - name: mas_instance_id
+        type: string
+        description: The identifier of the MAS instance that was created
+      - name: mas_workspace_id
+        type: string
+        description: The identifier of the MAS workspace that was created
+    version: v0.1.0
+    outputs:
+      - name: core_namespace
+        description: The namespace where the module will be deployed
+      - name: entitlement_secret_name
+        description: The name of the secret that contains the entitlement_key
+      - name: mas_instance_id
+        description: The identifier of the MAS instance that was created
+      - name: mas_workspace_id
+        description: The identifier of the MAS workspace that was created
+id: github.com/cloud-native-toolkit/terraform-util-mas-core-existing
