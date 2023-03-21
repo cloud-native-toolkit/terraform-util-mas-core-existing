@@ -1,7 +1,7 @@
 
-output "namespace" {
+output "core_namespace" {
   description = "The namespace where the module will be deployed"
-  value       = var.namespace
+  value       = var.core_namespace
 }
 
 output "entitlement_secret_name" {

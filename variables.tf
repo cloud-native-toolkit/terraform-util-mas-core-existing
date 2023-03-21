@@ -1,5 +1,5 @@
 
-variable "namespace" {
+variable "core_namespace" {
   type        = string
   description = "The namespace where the module will be deployed"
 }

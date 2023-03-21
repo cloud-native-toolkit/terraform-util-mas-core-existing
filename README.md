@@ -32,7 +32,7 @@ This module makes use of the output from other modules:
 module "existing_mas_core" {
   source = "github.com/cloud-native-toolkit/terraform-util-mas-core-existing.git"
 
-  namespace = var.namespace
+  core_namespace = var.core_namespace
   entitlement_secret_name = var.entitlement_secret_name
   mas_instance_id = var.mas_instance_id
   mas_workspace_id = var.mas_workspace_id
